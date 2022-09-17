@@ -2,7 +2,7 @@
 This is a service that allows me to have basic control of my windows computers without having to reveal any secrets (such as windows login creds)
 
 I use this with the Wake on LAN feature of home assistant as follows:
-```
+```yaml
 switch:
   - platform: wake_on_lan
     name: Work Laptop
@@ -12,7 +12,7 @@ switch:
       service: rest_command.hibernate_work_laptop
 ```
 and
-```
+```yaml
 rest_command:
   hibernate_work_laptop:
     url: http://192.168.1.ZZZ:5001/remote/hibernate
@@ -23,7 +23,7 @@ rest_command:
 ```
 
 and in the `Remote.Service.exe.config` on the machine you want to control you need to ensure these match up.
-```
+```xml
 <?xml version="1.0" encoding="utf-8" ?>
 <configuration>
     <startup> 
