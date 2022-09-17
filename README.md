@@ -41,3 +41,9 @@ Commands that can be called include:
 - `/remote/hibernate` attempts to put the machine in to hibernation.
 - `/remote/screen` attempts to turn off the screen(s).
 - `/remote/sleep` attempts to put the computer to sleep.
+
+To install the service, download the release into a folder (eg C:\Webapps\HomeControl) and then open a command window prompt (in Admin mode) and then run:
+
+`"C:\Windows\Microsoft.NET\Framework64\v4.0.30319\installutil.exe" "<location-you-placed-files>\Remote.Service.exe"`
+
+Other ways of installing a Windows Service are described in this [StackOverflow post](https://stackoverflow.com/questions/8164859/install-a-windows-service-using-a-windows-command-prompt)
